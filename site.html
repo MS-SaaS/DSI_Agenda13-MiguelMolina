@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- Essa parte inferior do código serve para juntar a parte do documento CSS
+     externo com esse código -->
+    <link rel="stylesheet" href="configs.css">
+
+    <!-- Essa parte com o código gigantesco serve para definir a parte do código "Interno", sendo a seção
+     sobre Música e Podcasts. -->
+    <style>
+        body { font-family: 'Comic Sans MS', cursive, sans-serif; text-align: center; background-color: #fafafa; margin: 0; padding: 0; }
+        .musica_section { padding: 20px; background-color: #f4f4f4; margin-bottom: 20px; }
+        .musica_section h2 { font-size: 20px; color: #333; }
+        .conteiner-musica { display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap; }
+        .bloco-musica { flex: 1; min-width: 220px; max-width: 280px; }
+        .bloco-musica img { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; }
+        .bloco-musica p { font-size: 13px; color: #555; }
+        .botao-musica { display: inline-block; margin-top: 5px; padding: 6px 10px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+
+    <!-- Essa parte representa o cabeçalho do site, estilo In-Line -->
+    <header style="background-color: #ffefd5; padding: 20px; align-items: center; text-align: center">
+
+        <div style="text-align: left; margin-left: 20px;">
+            <h1 style="margin: 0; font-size: 24px; color: #333;">Meu Portal de Entretenimento Digital</h1>
+        </div>
+
+        <img src="https://i.redd.it/9tnqs13vymrf1.jpeg" alt="Robert Downey Junior, meu ator favorito" style="width: 70px; height: 70px; border-radius: 50%; margin-right: 20px;">
+    
+
+    </header>
+
+    <!-- essa é a seção de Filmes e Séries, a primeira seção do site. Fiz ela no estilo In-Line pois
+     achei que fosse o mais fácil de implementar, mal sabia eu que eu passaria duas horas fazendo isso -->
+
+    <!-- Em cada uma das "<Div>'s" dessa parte do código, ficam as configurações individuais,
+        por linha, de cada uma das partes do código da primeira seção do Site, sempre seguindo a 
+        ordem de "Imagem, Descrição, Botão"-->
+
+    <section style="padding: 20px; background-color: #fff; margin-bottom: 20px;">
+
+        <h2 style="font-size: 20px; color: #333;">Filmes e Séries</h2>
+
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 10px; ">
+<!-- Primeira imagem abaixo -->
+            <div style="flex: 1; min-width: 220px; max-width: 280px;">
+                <img src="https://aventurasnahistoria.com.br/wp-content/uploads/2024/08/django.jpg" alt="Django Livre" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px;">
+
+                <p style="font-size: 13px; color: #555;">Meu filme favorito.</p>
+
+                <a href="https://www.netflix.com/br/title/70230640" target="_blank" style="display: inline-block; margin-top: 5px; padding: 6px 10px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 12px;">Ver Filme</a>
+            </div>
+
+            <div style="flex: 1; min-width: 220px; max-width: 280px;">
+                <img src="https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfQUAwWZ4BIKt5LZP_pFPHuAZo8T1WTOlOlV32leIaEV3uyCgZCtUySFCcqnAb255Sv18r2FN8KnwYLXebfcelLT9q3bdfH20yMF.jpg?r=a9c" alt="Better Call Saul" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px;">
+<!-- Segunda imagem abaixo -->
+                <p style="font-size: 13px; color: #555;">Uma das únicas séries que assisti até hoje.</p>
+
+                <a href="https://www.netflix.com/pt/title/80021955" target="_blank" style="display: inline-block; margin-top: 5px; padding: 6px 10px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 12px;">Ver Série</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nessa segunda seção, sobre Música e Podcasts, fiz o estilo interno. Achei mil
+        vezes mais facil do que o In-Line e dei glória a Deus que essa parte foi mais fácil. -->
+
+        <!-- Nessa parte do código, algumas das configurações chaves já haviam sido
+         definidas das linhas 15-24. Aqui, você só encontra os textos, links para imagens e
+         hiperligações, seguindo o mesmo modelo anterior com imagem, descrição e botão -->
+
+    <section class="musica_section">
+        <h2>Música e Podcasts</h2>
+        <div class="conteiner-musica">
+<!-- Primeira imagem abaixo -->
+            <div class="bloco-musica">
+                <img src="https://m.media-amazon.com/images/I/71UzjXRiGHL._UF1000,1000_QL80_.jpg" alt="Igor">
+
+                <p>Meu album favorito de todos os tempos.</p>
+
+                <a href="https://www.youtube.com/watch?v=wfGuSP7PvW4" target="_blank" class="botao-musica">Ouvir Álbum</a>
+            </div>
+<!-- Segunda imagem abaixo -->
+            <div class="bloco-musica">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/6/63/Logo_frontal_the_noite.jpeg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="The Noite">
+
+                <p>Meu programa de entrevistas favorito.</p>
+
+                <a href="https://www.youtube.com/watch?v=YPyA8xFd8bc" target="_blank" class="botao-musica">Ver Especial</a>
+            </div>
+<!-- Terceira imagem abaixo -->
+            <div class="bloco-musica">
+                <img src="https://i.ytimg.com/vi/dLrdSC9MVb4/maxresdefault.jpg" alt="Tally Hall">
+
+                <p>Música que mais ouvi recentemente.</p>
+
+                <a href="https://www.youtube.com/watch?v=dLrdSC9MVb4" target="_blank" class="botao-musica">Ouvir Música</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Na terceira seção, sobre Games e Tecnologia, fiz o estilo externo. Achei bem tranquilo.
+        Gostei bastante desse estilo de HTML pois me lembrou as variáveis que podemos ver em outras
+        linguagens de programação, e isso me deixou BEM feliz -->
+
+         <!-- Estilo externo para a seção de Games e Tecnologia, fazendo com que
+          sigamos a mesma estrutura do estilo interno. Como tudo já foi configurado
+          separadamente (Dessa vez em um outro arquivo), apenas setamos a imagem, descrição e botão -->
+
+    <section class="games_section">
+        <h2>Games e Tecnologia</h2>
+        <div class="conteiner-games">
+<!-- Primeira imagem abaixo -->
+            <div class="bloco-games">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/0/02/Detroit_Become_Human_capa.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Detroit: Become Human">
+
+                <p>Meu jogo favorito de todos os tempos.</p>
+
+                <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" target="_blank" class="botao-games">Ver Jogo</a>
+            </div>
+<!-- Segunda imagem abaixo -->
+            <div class="bloco-games">
+                <img src="https://brmotorolanew.vtexassets.com/arquivos/ids/171651-800-auto?v=638797413825530000&width=800&height=auto&aspect=true" alt="Celular">
+
+                <p>Meu modelo de celular atual.</p>
+
+                <a href="https://www.motorola.com.br/smartphone-motorola-edge-50-fusion/p?srsltid=AYCX9vKA7QBQRsvQsddKFyuHHKZhm9FIr_1QIon9_ZTI-7CiVoC5yRF8&idsku=1543" target="_blank" class="botao-games">Ver Celular</a>
+            </div>
+
+        </div>
+    </section>
+<!-- Fim do código, ebaa! -->
+</body>
+</html>
